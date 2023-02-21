@@ -40,19 +40,23 @@ class _drawersettingsState extends State<drawersettings> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Card(
-                    color: Color.fromARGB(255, 252, 95, 95),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: <Widget>[
-                        ListTile(
-                          leading: Icon(Icons.dark_mode),
-                          title: Text('8'.tr),
-                          onTap: () {},
-                        ),
-                      ],
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, 'myThems');
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Card(
+                      color: Color.fromARGB(255, 252, 95, 95),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          ListTile(
+                            leading: Icon(Icons.dark_mode),
+                            title: Text('8'.tr),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

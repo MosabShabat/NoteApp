@@ -89,7 +89,7 @@ class _homeState extends State<home> {
                       return Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10.0),
                         child: Card(
-                            color: Color.fromARGB(255, 255, 197, 193),
+                            color: Color.fromARGB(255, 219, 219, 219),
                             child: ListTile(
                               title: Text("${notes[i]['note']}"),
                               subtitle: Text("${notes[i]['title']}"),

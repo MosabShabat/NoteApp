@@ -12,6 +12,7 @@ import 'screens/chosseLanguge.dart';
 import 'screens/drawerprofile.dart';
 import 'screens/drawersettings.dart';
 import 'screens/home.dart';
+import 'screens/myThems.dart';
 import 'screens/seplash.dart';
 
 SharedPreferences? prefs;
@@ -22,6 +23,7 @@ void main() async {
 
   runApp(const MyApp());
 }
+
 //This Code needed highest version of dart and flutter...please sure you have this rquerments
 //Mosab Ramzi shabat
 class MyApp extends StatelessWidget {
@@ -48,9 +50,15 @@ class MyApp extends StatelessWidget {
         'drawersettings': (context) => drawersettings(),
         'addNotes': (context) => addNotes(),
         'chosseLanguge': (context) => chosseLanguge(),
+        'myThems': (context) => myThems(),
 
         //chosseLanguge
       },
     );
   }
+}
+
+class Thems {
+  static ThemeData sutomeDarkTheme = ThemeData.dark().copyWith();
+  static ThemeData sutomeLightTheme = ThemeData.light().copyWith();
 }

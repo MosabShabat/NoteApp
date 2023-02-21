@@ -11,7 +11,7 @@ class MyLocal implements Translations {
           "5": "الاعدادات",
           "6": "تسجيل الخروج",
           "7": "اللغة",
-          "8": "الوضع الليلي",
+          "8": " الثيمات",
           "9": " الاشعارات",
           "10": " اضافة ملاحظة",
           "11": " الملاحظة",
@@ -30,7 +30,9 @@ class MyLocal implements Translations {
           "24": "تحذير",
           "25": "هل أنت متأكد من الحذف؟",
           "26": "نعم",
-          "27": "لا"
+          "27": "لا",
+          "28": "الوضع الليلي",
+          "29": "وضع النهار"
         },
         "en": {
           "1": "Notes",
@@ -40,7 +42,7 @@ class MyLocal implements Translations {
           "5": "Settings",
           "6": "LogOut",
           "7": "Languge",
-          "8": "Night Mode",
+          "8": "Themes",
           "9": " Notification",
           "10": "Add Notes",
           "11": "Note",
@@ -59,7 +61,9 @@ class MyLocal implements Translations {
           "24": "Warning",
           "25": "Are you sure you want to delete?",
           "26": "Yes",
-          "27": "No"
+          "27": "No",
+          "28": "Dark mode",
+          "29": "light mode"
         }
       };
 }

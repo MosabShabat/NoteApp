@@ -4,24 +4,22 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 
 import '../general/general.dart';
-import '../local/MyLocalController.dart';
+import '../main.dart';
 
 enum SingingCharacter { lafayette, jefferson }
 
-class chosseLanguge extends StatefulWidget {
-  const chosseLanguge({super.key});
+class myThems extends StatefulWidget {
+  const myThems({super.key});
 
   @override
-  State<chosseLanguge> createState() => _chosseLangugeState();
+  State<myThems> createState() => _myThemsState();
 }
 
-class _chosseLangugeState extends State<chosseLanguge> {
+class _myThemsState extends State<myThems> {
   SingingCharacter? _character = SingingCharacter.jefferson;
 
   @override
   Widget build(BuildContext context) {
-    MyLocalController MLC = Get.find();
-
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -42,7 +40,7 @@ class _chosseLangugeState extends State<chosseLanguge> {
               child: RadioListTile<SingingCharacter>(
                 activeColor: Colors.white,
                 title: text(
-                    text: '2'.tr,
+                    text: '28'.tr,
                     size: 24.0,
                     color: Colors.white,
                     bold: FontWeight.bold),
@@ -52,7 +50,7 @@ class _chosseLangugeState extends State<chosseLanguge> {
                   setState(() {
                     _character = value;
                   });
-                  MLC.chageLang('ar');
+                  Get.changeTheme(Thems.sutomeDarkTheme);
                 },
               ),
             ),
@@ -62,7 +60,7 @@ class _chosseLangugeState extends State<chosseLanguge> {
               child: RadioListTile<SingingCharacter>(
                 activeColor: Colors.white,
                 title: text(
-                    text: '3'.tr,
+                    text: '29'.tr,
                     size: 24.0,
                     color: Colors.white,
                     bold: FontWeight.bold),
@@ -72,7 +70,7 @@ class _chosseLangugeState extends State<chosseLanguge> {
                   setState(() {
                     _character = value;
                   });
-                  MLC.chageLang('en');
+                  Get.changeTheme(Thems.sutomeLightTheme);
                 },
               ),
             ),
