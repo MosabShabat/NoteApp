@@ -37,61 +37,53 @@ class _chosseLangugeState extends State<chosseLanguge> {
         child: Column(
           children: [
             sizedBox(h: 20.0),
-            GestureDetector(
-                onTap: () {
+            Card(
+              color: Color.fromARGB(255, 252, 95, 95),
+              child: RadioListTile<SingingCharacter>(
+                activeColor: Colors.white,
+                title: text(
+                    text: '2'.tr,
+                    size: 24.0,
+                    color: Colors.white,
+                    bold: FontWeight.bold),
+                value: SingingCharacter.lafayette,
+                groupValue: _character,
+                onChanged: (SingingCharacter? value) {
+                  setState(() {
+                    _character = value;
+                  });
                   MLC.chageLang('ar');
                 },
-                child: Card(
-                  color: Color.fromARGB(255, 252, 95, 95),
-                  child: RadioListTile<SingingCharacter>(
-                    activeColor: Colors.white,
-                    title: text(
-                        text: '2'.tr,
-                        size: 24.0,
-                        color: Colors.white,
-                        bold: FontWeight.bold),
-                    value: SingingCharacter.lafayette,
-                    groupValue: _character,
-                    onChanged: (SingingCharacter? value) {
-                      MLC.chageLang('ar');
-                      setState(() {
-                        _character = value;
-                      });
-                    },
-                  ),
-                )),
+              ),
+            ),
             sizedBox(h: 20.0),
-            GestureDetector(
-                onTap: () {
+            Card(
+              color: Color.fromARGB(255, 252, 95, 95),
+              child: RadioListTile<SingingCharacter>(
+                activeColor: Colors.white,
+                title: text(
+                    text: '3'.tr,
+                    size: 24.0,
+                    color: Colors.white,
+                    bold: FontWeight.bold),
+                value: SingingCharacter.jefferson,
+                groupValue: _character,
+                onChanged: (SingingCharacter? value) {
+                  setState(() {
+                    _character = value;
+                  });
                   MLC.chageLang('en');
                 },
-                child: Card(
-                  color: Color.fromARGB(255, 252, 95, 95),
-                  child: RadioListTile<SingingCharacter>(
-                    activeColor: Colors.white,
-                    title: text(
-                        text: '3'.tr,
-                        size: 24.0,
-                        color: Colors.white,
-                        bold: FontWeight.bold),
-                    value: SingingCharacter.jefferson,
-                    groupValue: _character,
-                    onChanged: (SingingCharacter? value) {
-                      MLC.chageLang('en');
-                      setState(() {
-                        _character = value;
-                      });
-                    },
-                  ),
-                  // ListTile(
-                  //   leading: Icon(Icons.language),
-                  //   title: text(
-                  //       text: '3'.tr,
-                  //       size: 24.0,
-                  //       color: Colors.white,
-                  //       bold: FontWeight.bold),
-                  // ),
-                )),
+              ),
+              // ListTile(
+              //   leading: Icon(Icons.language),
+              //   title: text(
+              //       text: '3'.tr,
+              //       size: 24.0,
+              //       color: Colors.white,
+              //       bold: FontWeight.bold),
+              // ),
+            ),
           ],
         ),
       ),

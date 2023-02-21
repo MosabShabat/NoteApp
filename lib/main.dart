@@ -22,6 +22,7 @@ void main() async {
 
   runApp(const MyApp());
 }
+//This Code needed highest version of dart and flutter...please sure you have this rquerments
 //Mosab Ramzi shabat
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
