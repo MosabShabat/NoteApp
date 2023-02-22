@@ -42,7 +42,6 @@ class _editState extends State<edit> {
           '14'.tr,
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.red,
       ),
       body: Container(
         child: ListView(
@@ -59,7 +58,7 @@ class _editState extends State<edit> {
                         fillColor: Colors.transparent,
                         filled: true,
                         obscureText1: false,
-                        borderSideColor: Colors.red,
+                        borderSideColor: Colors.grey,
                         borderSideRadius: 12.0,
                         maxWidth: 350.0,
                         maxHeight: 50.0,
@@ -67,7 +66,7 @@ class _editState extends State<edit> {
                         minLines: 1,
                         prefixIcon: Icon(
                           Icons.note,
-                          color: Colors.red,
+                          color: Colors.grey,
                         ),
                         outbordercolor: Colors.blue,
                         hintText: '11'.tr,
@@ -84,7 +83,7 @@ class _editState extends State<edit> {
                         fillColor: Colors.transparent,
                         filled: true,
                         obscureText1: false,
-                        borderSideColor: Colors.red,
+                        borderSideColor: Colors.grey,
                         borderSideRadius: 12.0,
                         maxWidth: 350.0,
                         maxHeight: 50.0,
@@ -92,7 +91,7 @@ class _editState extends State<edit> {
                         minLines: 1,
                         prefixIcon: Icon(
                           Icons.title_outlined,
-                          color: Colors.red,
+                          color: Colors.grey,
                         ),
                         outbordercolor: Colors.blue,
                         hintText: '12'.tr,
@@ -117,7 +116,7 @@ class _editState extends State<edit> {
                         minLines: 1,
                         prefixIcon: Icon(
                           Icons.color_lens,
-                          color: Colors.red,
+                          color: Colors.grey,
                         ),
                         outbordercolor: Colors.blue,
                         hintText: '13'.tr,
@@ -131,7 +130,7 @@ class _editState extends State<edit> {
                       height: 40.0,
                       width: 150,
                       child: MaterialButton(
-                        color: Colors.red,
+                        color: Colors.grey,
                         textColor: Colors.white,
                         onPressed: () async {
                           // int response = await sqlDb.updateData('''

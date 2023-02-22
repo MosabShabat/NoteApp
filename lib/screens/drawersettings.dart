@@ -15,7 +15,6 @@ class _drawersettingsState extends State<drawersettings> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: drawerAppBar(context),
-        drawer: DrawerMethod(context),
         body: SafeArea(
           child: ListView(children: [
             Column(
@@ -23,7 +22,7 @@ class _drawersettingsState extends State<drawersettings> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Card(
-                    color: Color.fromARGB(255, 252, 95, 95),
+                    color: Colors.grey,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -47,7 +46,7 @@ class _drawersettingsState extends State<drawersettings> {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Card(
-                      color: Color.fromARGB(255, 252, 95, 95),
+                      color: Colors.grey,
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
@@ -63,7 +62,7 @@ class _drawersettingsState extends State<drawersettings> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Card(
-                    color: Color.fromARGB(255, 252, 95, 95),
+                    color: Colors.grey,
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: <Widget>[

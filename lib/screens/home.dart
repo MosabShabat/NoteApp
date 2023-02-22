@@ -38,7 +38,6 @@ class _homeState extends State<home> {
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Colors.red,
           title: text(
               text: 'RamziChat',
               size: 24.0,
@@ -47,7 +46,7 @@ class _homeState extends State<home> {
         ),
         drawer: DrawerMethod(context),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.grey,
           foregroundColor: Colors.white,
           onPressed: () {
             Navigator.of(context).pushNamed('addNotes');
@@ -57,7 +56,7 @@ class _homeState extends State<home> {
         body: isLoading == true
             ? Center(
                 child: CircularProgressIndicator(
-                  color: Colors.red,
+                  color: Colors.grey,
                 ),
               )
             : Container(
@@ -69,7 +68,7 @@ class _homeState extends State<home> {
                     width: 100,
                     height: 50,
                     decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: Colors.grey,
                         borderRadius: BorderRadius.circular(12.0)),
                     child: Center(
                       child: text(
@@ -89,7 +88,7 @@ class _homeState extends State<home> {
                       return Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 10.0),
                         child: Card(
-                            color: Color.fromARGB(255, 219, 219, 219),
+                            color: Color.fromARGB(255, 196, 196, 196),
                             child: ListTile(
                               title: Text("${notes[i]['note']}"),
                               subtitle: Text("${notes[i]['title']}"),

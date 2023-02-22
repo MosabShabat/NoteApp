@@ -14,9 +14,7 @@ class _drawerprofileState extends State<drawerprofile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       appBar: drawerAppBar(context),
-      drawer: DrawerMethod(context),
       body: SafeArea(
           child: ListView(
         children: [
@@ -30,6 +28,4 @@ class _drawerprofileState extends State<drawerprofile> {
       )),
     );
   }
-
-
 }

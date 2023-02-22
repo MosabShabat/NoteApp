@@ -23,11 +23,11 @@ class _addNotesState extends State<addNotes> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         title: Text(
           '10'.tr,
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.red,
       ),
       body: ListView(
         children: [
@@ -43,7 +43,7 @@ class _addNotesState extends State<addNotes> {
                       fillColor: Colors.transparent,
                       filled: true,
                       obscureText1: false,
-                      borderSideColor: Colors.red,
+                      borderSideColor: Colors.grey,
                       borderSideRadius: 12.0,
                       maxWidth: 350.0,
                       maxHeight: 50.0,
@@ -51,13 +51,13 @@ class _addNotesState extends State<addNotes> {
                       minLines: 1,
                       prefixIcon: Icon(
                         Icons.note,
-                        color: Colors.red,
+                        color: Colors.grey,
                       ),
                       outbordercolor: Colors.blue,
                       hintText: '11'.tr,
                       hintfontSize: 16.0,
                       hintfontWeight: FontWeight.w500,
-                      hintStylecolor: Colors.red,
+                      hintStylecolor: Colors.grey,
                       borderwidth: 3.0,
                       BorderStyle: BorderStyle.solid),
                   sizedBox(h: 30.0),
@@ -68,7 +68,7 @@ class _addNotesState extends State<addNotes> {
                       fillColor: Colors.transparent,
                       filled: true,
                       obscureText1: false,
-                      borderSideColor: Colors.red,
+                      borderSideColor: Colors.grey,
                       borderSideRadius: 12.0,
                       maxWidth: 350.0,
                       maxHeight: 50.0,
@@ -76,13 +76,13 @@ class _addNotesState extends State<addNotes> {
                       minLines: 1,
                       prefixIcon: Icon(
                         Icons.title_outlined,
-                        color: Colors.red,
+                        color: Colors.grey,
                       ),
                       outbordercolor: Colors.blue,
                       hintText: '12'.tr,
                       hintfontSize: 16.0,
                       hintfontWeight: FontWeight.w500,
-                      hintStylecolor: Colors.red,
+                      hintStylecolor: Colors.grey,
                       borderwidth: 3.0,
                       BorderStyle: BorderStyle.solid),
                   sizedBox(h: 30.0),
@@ -93,7 +93,7 @@ class _addNotesState extends State<addNotes> {
                       fillColor: Colors.transparent,
                       filled: true,
                       obscureText1: false,
-                      borderSideColor: Colors.red,
+                      borderSideColor: Colors.grey,
                       borderSideRadius: 12.0,
                       maxWidth: 350.0,
                       maxHeight: 50.0,
@@ -101,13 +101,13 @@ class _addNotesState extends State<addNotes> {
                       minLines: 1,
                       prefixIcon: Icon(
                         Icons.color_lens,
-                        color: Colors.red,
+                        color: Colors.grey,
                       ),
                       outbordercolor: Colors.blue,
                       hintText: '13'.tr,
                       hintfontSize: 16.0,
                       hintfontWeight: FontWeight.w500,
-                      hintStylecolor: Colors.red,
+                      hintStylecolor: Colors.grey,
                       borderwidth: 3.0,
                       BorderStyle: BorderStyle.solid),
                   sizedBox(h: 30.0),
@@ -115,7 +115,7 @@ class _addNotesState extends State<addNotes> {
                     height: 40.0,
                     width: 150,
                     child: MaterialButton(
-                      color: Colors.red,
+                      color: Colors.grey,
                       textColor: Colors.white,
                       onPressed: () async {
                         // int response = await sqlDb.insertData('''

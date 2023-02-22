@@ -63,13 +63,13 @@ class _SingUpState extends State<SingUp> {
                       minLines: 1,
                       prefixIcon: Icon(
                         Icons.email,
-                        color: Colors.red,
+                        color: Colors.grey,
                       ),
                       outbordercolor: Colors.blue,
                       hintText: '15'.tr,
                       hintfontSize: 16.0,
                       hintfontWeight: FontWeight.w500,
-                      hintStylecolor: Color.fromARGB(255, 255, 146, 146),
+                      hintStylecolor: Colors.grey,
                       borderwidth: 2.0,
                       BorderStyle: BorderStyle.solid),
                   sizedBox(h: 30.0),
@@ -91,7 +91,7 @@ class _SingUpState extends State<SingUp> {
                           _passwordVisible
                               ? Icons.visibility
                               : Icons.visibility_off,
-                          color: Color.fromARGB(255, 255, 0, 0),
+                          color: Colors.grey,
                         ),
                         onPressed: () {
                           setState() {
@@ -103,13 +103,13 @@ class _SingUpState extends State<SingUp> {
                       ),
                       prefixIcon: Icon(
                         Icons.lock,
-                        color: Colors.red,
+                        color: Colors.grey,
                       ),
                       outbordercolor: Colors.blue,
                       hintText: '16'.tr,
                       hintfontSize: 16.0,
                       hintfontWeight: FontWeight.w500,
-                      hintStylecolor: Color.fromARGB(255, 255, 146, 146),
+                      hintStylecolor: Colors.grey,
                       borderwidth: 2.0,
                       BorderStyle: BorderStyle.solid),
                   sizedBox(h: 30.0),
@@ -128,13 +128,13 @@ class _SingUpState extends State<SingUp> {
                       minLines: 1,
                       prefixIcon: Icon(
                         Icons.phone,
-                        color: Colors.red,
+                        color: Colors.grey,
                       ),
                       outbordercolor: Colors.blue,
                       hintText: '20'.tr,
                       hintfontSize: 16.0,
                       hintfontWeight: FontWeight.w500,
-                      hintStylecolor: Color.fromARGB(255, 255, 146, 146),
+                      hintStylecolor: Colors.grey,
                       borderwidth: 2.0,
                       BorderStyle: BorderStyle.solid),
                   sizedBox(h: 30.0),
@@ -153,7 +153,7 @@ class _SingUpState extends State<SingUp> {
                         child: text(
                             text: '19'.tr,
                             size: 18.0,
-                            color: Colors.red,
+                            color: Colors.grey,
                             bold: FontWeight.w500),
                       )
                     ],
@@ -162,7 +162,7 @@ class _SingUpState extends State<SingUp> {
                   ElevatedButton(
                       onPressed: () => _performRegister(),
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromARGB(255, 251, 5, 5),
+                          backgroundColor: Colors.grey,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                           side: const BorderSide(color: Colors.transparent)),
@@ -218,7 +218,7 @@ class _SingUpState extends State<SingUp> {
   showSnackBar({message}) {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Text(message),
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.grey,
     ));
   }
 }

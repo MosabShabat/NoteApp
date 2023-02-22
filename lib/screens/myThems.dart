@@ -26,7 +26,6 @@ class _myThemsState extends State<myThems> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.red,
         title: text(
             text: 'RamziChat',
             size: 24.0,
@@ -38,47 +37,65 @@ class _myThemsState extends State<myThems> {
         child: Column(
           children: [
             sizedBox(h: 20.0),
-            Card(
-              color: Color.fromARGB(255, 252, 95, 95),
-              child: RadioListTile<SingingCharacter>(
-                activeColor: Colors.white,
-                title: text(
-                    text: '28'.tr,
-                    size: 24.0,
-                    color: Colors.white,
-                    bold: FontWeight.bold),
-                value: SingingCharacter.lafayette,
-                groupValue: _character,
-                onChanged: (SingingCharacter? value) {
-                  setState(() {
-                    _character = value;
-                  });
-                  Get.changeTheme(ThemeData.dark());
-                  controller.storeThemeSetting(true);
-                },
-              ),
-            ),
+            MaterialButton(
+              onPressed: () {
+                Get.changeTheme(ThemeData.dark());
+                controller.storeThemeSetting(true);
+              },
+              child: text(
+                  text: '28'.tr,
+                  size: 24.0,
+                  color: Colors.white,
+                  bold: FontWeight.bold),
+              color: Colors.grey,
+              minWidth: MediaQuery.of(context).size.width,
+            )
+            // MaterialButton(
+            //   onPressed: () {
+            //     Get.changeTheme(ThemeData.dark()
+            //         .copyWith(appBarTheme: AppBarTheme(color: Colors.yellow)));
+            //     controller.storeThemeSetting(true);
+            //   },
+            //   child: text(
+            //       text: '28'.tr,
+            //       size: 24.0,
+            //       color: Colors.white,
+            //       bold: FontWeight.bold),
+            //   color: Colors.grey,
+            //   minWidth: MediaQuery.of(context).size.width,
+            // ),
+            ,
             sizedBox(h: 20.0),
-            Card(
-              color: Color.fromARGB(255, 252, 95, 95),
-              child: RadioListTile<SingingCharacter>(
-                activeColor: Colors.white,
-                title: text(
-                    text: '29'.tr,
-                    size: 24.0,
-                    color: Colors.white,
-                    bold: FontWeight.bold),
-                value: SingingCharacter.jefferson,
-                groupValue: _character,
-                onChanged: (SingingCharacter? value) {
-                  setState(() {
-                    _character = value;
-                  });
-                  Get.changeTheme(ThemeData.light());
-                  controller.storeThemeSetting(false);
-                },
-              ),
-            ),
+            MaterialButton(
+              onPressed: () {
+                Get.changeTheme(ThemeData.light());
+                controller.storeThemeSetting(false);
+                // final appBarColor = Colors.pink;
+                // controller.storeThemeSetting(false, appBarColor);
+              },
+              child: text(
+                  text: '29'.tr,
+                  size: 24.0,
+                  color: Colors.white,
+                  bold: FontWeight.bold),
+              color: Colors.grey,
+              minWidth: MediaQuery.of(context).size.width,
+            )
+
+            // MaterialButton(
+            //   onPressed: () {
+            //     Get.changeTheme(ThemeData.light()
+            //         .copyWith(appBarTheme: AppBarTheme(color: Colors.pink)));
+            //     controller.storeThemeSetting(false);
+            //   },
+            //   child: text(
+            //       text: '29'.tr,
+            //       size: 24.0,
+            //       color: Colors.white,
+            //       bold: FontWeight.bold),
+            //   color: Colors.grey,
+            //   minWidth: MediaQuery.of(context).size.width,
+            // ),
           ],
         ),
       ),

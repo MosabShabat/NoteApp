@@ -61,13 +61,13 @@ class _LoginState extends State<Login> {
                       minLines: 1,
                       prefixIcon: Icon(
                         Icons.email,
-                        color: Colors.red,
+                        color: Colors.grey,
                       ),
                       outbordercolor: Colors.blue,
                       hintText: '15'.tr,
                       hintfontSize: 16.0,
                       hintfontWeight: FontWeight.w500,
-                      hintStylecolor: Color.fromARGB(255, 255, 146, 146),
+                      hintStylecolor: Colors.grey,
                       borderwidth: 2.0,
                       BorderStyle: BorderStyle.solid),
                   sizedBox(h: 30.0),
@@ -86,11 +86,10 @@ class _LoginState extends State<Login> {
                       minLines: 1,
                       suffixIcon: IconButton(
                         icon: Icon(
-                          _passwordVisible
-                              ? Icons.visibility
-                              : Icons.visibility_off,
-                          color: Color.fromARGB(255, 255, 0, 0),
-                        ),
+                            _passwordVisible
+                                ? Icons.visibility
+                                : Icons.visibility_off,
+                            color: Colors.grey),
                         onPressed: () {
                           setState() {
                             _passwordVisible = !_passwordVisible;
@@ -101,13 +100,13 @@ class _LoginState extends State<Login> {
                       ),
                       prefixIcon: Icon(
                         Icons.lock,
-                        color: Colors.red,
+                        color: Colors.grey,
                       ),
                       outbordercolor: Colors.blue,
                       hintText: '16'.tr,
                       hintfontSize: 16.0,
                       hintfontWeight: FontWeight.w500,
-                      hintStylecolor: Color.fromARGB(255, 255, 146, 146),
+                      hintStylecolor: Colors.grey,
                       borderwidth: 2.0,
                       BorderStyle: BorderStyle.solid),
                   sizedBox(h: 30.0),
@@ -126,7 +125,7 @@ class _LoginState extends State<Login> {
                         child: text(
                             text: '18'.tr,
                             size: 18.0,
-                            color: Colors.red,
+                            color: Colors.grey,
                             bold: FontWeight.w500),
                       )
                     ],
@@ -135,7 +134,7 @@ class _LoginState extends State<Login> {
                   ElevatedButton(
                       onPressed: () => _performLogin(),
                       style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromARGB(255, 251, 5, 5),
+                          backgroundColor: Colors.grey,
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                           side: const BorderSide(color: Colors.transparent)),
@@ -194,7 +193,7 @@ class _LoginState extends State<Login> {
   showSnackBar({message}) {
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Text(message),
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.grey,
     ));
   }
 }

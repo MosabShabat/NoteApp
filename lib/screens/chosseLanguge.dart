@@ -25,7 +25,6 @@ class _chosseLangugeState extends State<chosseLanguge> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.red,
         title: text(
             text: 'RamziChat',
             size: 24.0,
@@ -37,45 +36,69 @@ class _chosseLangugeState extends State<chosseLanguge> {
         child: Column(
           children: [
             sizedBox(h: 20.0),
-            Card(
-              color: Color.fromARGB(255, 252, 95, 95),
-              child: RadioListTile<SingingCharacter>(
-                activeColor: Colors.white,
-                title: text(
-                    text: '2'.tr,
-                    size: 24.0,
-                    color: Colors.white,
-                    bold: FontWeight.bold),
-                value: SingingCharacter.lafayette,
-                groupValue: _character,
-                onChanged: (SingingCharacter? value) {
-                  setState(() {
-                    _character = value;
-                  });
-                  MLC.chageLang('ar');
-                },
-              ),
+            MaterialButton(
+              onPressed: () {
+                MLC.chageLang('ar');
+              },
+              child: text(
+                  text: '2'.tr,
+                  size: 24.0,
+                  color: Colors.white,
+                  bold: FontWeight.bold),
+              color: Colors.grey,
+              minWidth: MediaQuery.of(context).size.width,
             ),
+            // Card(
+            //   color: Color.fromARGB(255, 252, 95, 95),
+            //   child: RadioListTile<SingingCharacter>(
+            //     activeColor: Colors.white,
+            //     title: text(
+            //         text: '2'.tr,
+            //         size: 24.0,
+            //         color: Colors.white,
+            //         bold: FontWeight.bold),
+            //     value: SingingCharacter.lafayette,
+            //     groupValue: _character,
+            //     onChanged: (SingingCharacter? value) {
+            //       setState(() {
+            //         _character = value;
+            //       });
+            //       MLC.chageLang('ar');
+            //     },
+            //   ),
+            // ),
             sizedBox(h: 20.0),
-            Card(
-              color: Color.fromARGB(255, 252, 95, 95),
-              child: RadioListTile<SingingCharacter>(
-                activeColor: Colors.white,
-                title: text(
-                    text: '3'.tr,
-                    size: 24.0,
-                    color: Colors.white,
-                    bold: FontWeight.bold),
-                value: SingingCharacter.jefferson,
-                groupValue: _character,
-                onChanged: (SingingCharacter? value) {
-                  setState(() {
-                    _character = value;
-                  });
-                  MLC.chageLang('en');
-                },
-              ),
+            MaterialButton(
+              onPressed: () {
+                MLC.chageLang('en');
+              },
+              child: text(
+                  text: '3'.tr,
+                  size: 24.0,
+                  color: Colors.white,
+                  bold: FontWeight.bold),
+              color: Colors.grey,
+              minWidth: MediaQuery.of(context).size.width,
             ),
+            // Card(
+            //   color: Color.fromARGB(255, 252, 95, 95),
+            //   child: RadioListTile<SingingCharacter>(
+            //     activeColor: Colors.white,
+            //     title: text(
+            //         text: '3'.tr,
+            //         size: 24.0,
+            //         color: Colors.white,
+            //         bold: FontWeight.bold),
+            //     value: SingingCharacter.jefferson,
+            //     groupValue: _character,
+            //     onChanged: (SingingCharacter? value) {
+            //       setState(() {
+            //         _character = value;
+            //       });
+            //       MLC.chageLang('en');
+            //     },
+            //   ),
+            // ),
           ],
         ),
       ),

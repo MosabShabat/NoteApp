@@ -108,7 +108,7 @@ Drawer DrawerMethod(BuildContext context) {
             style: const TextStyle(color: Colors.white, fontSize: 30),
           ),
           decoration: BoxDecoration(
-            color: Color.fromARGB(255, 255, 0, 0),
+            color: Colors.grey,
           ),
         ),
         ListTile(
@@ -139,7 +139,6 @@ Drawer DrawerMethod(BuildContext context) {
 AppBar drawerAppBar(BuildContext context) {
   return AppBar(
     elevation: 0,
-    backgroundColor: Colors.red,
     title: text(
         text: 'RamziChat',
         size: 24.0,
