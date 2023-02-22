@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
 import 'package:waelprojects/screens/addNotes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -20,7 +21,8 @@ SharedPreferences? prefs;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   prefs = await SharedPreferences.getInstance();
-
+  await GetStorage.init();
+  Get.put(SettingsController());
   runApp(const MyApp());
 }
 
@@ -33,11 +35,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     MyLocalController controller = Get.put(MyLocalController());
+    final controller1 = Get.find<SettingsController>();
 
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(useMaterial3: true),
+      //theme: ThemeData(useMaterial3: true),
+      theme: controller1.themeData,
       home: seplash(),
       locale: controller.initailLang,
       translations: MyLocal(),

@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 
 import '../general/general.dart';
+import '../local/MyLocalController.dart';
 import '../main.dart';
 
 enum SingingCharacter { lafayette, jefferson }
@@ -20,6 +21,8 @@ class _myThemsState extends State<myThems> {
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.find<SettingsController>();
+
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
@@ -50,7 +53,8 @@ class _myThemsState extends State<myThems> {
                   setState(() {
                     _character = value;
                   });
-                  Get.changeTheme(Thems.sutomeDarkTheme);
+                  Get.changeTheme(ThemeData.dark());
+                  controller.storeThemeSetting(true);
                 },
               ),
             ),
@@ -70,7 +74,8 @@ class _myThemsState extends State<myThems> {
                   setState(() {
                     _character = value;
                   });
-                  Get.changeTheme(Thems.sutomeLightTheme);
+                  Get.changeTheme(ThemeData.light());
+                  controller.storeThemeSetting(false);
                 },
               ),
             ),
