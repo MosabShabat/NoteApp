@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 
 import '../general/general.dart';
@@ -49,29 +47,12 @@ class _myThemsState extends State<myThems> {
                   bold: FontWeight.bold),
               color: Colors.grey,
               minWidth: MediaQuery.of(context).size.width,
-            )
-            // MaterialButton(
-            //   onPressed: () {
-            //     Get.changeTheme(ThemeData.dark()
-            //         .copyWith(appBarTheme: AppBarTheme(color: Colors.yellow)));
-            //     controller.storeThemeSetting(true);
-            //   },
-            //   child: text(
-            //       text: '28'.tr,
-            //       size: 24.0,
-            //       color: Colors.white,
-            //       bold: FontWeight.bold),
-            //   color: Colors.grey,
-            //   minWidth: MediaQuery.of(context).size.width,
-            // ),
-            ,
+            ),
             sizedBox(h: 20.0),
             MaterialButton(
               onPressed: () {
                 Get.changeTheme(ThemeData.light());
                 controller.storeThemeSetting(false);
-                // final appBarColor = Colors.pink;
-                // controller.storeThemeSetting(false, appBarColor);
               },
               child: text(
                   text: '29'.tr,
@@ -81,21 +62,6 @@ class _myThemsState extends State<myThems> {
               color: Colors.grey,
               minWidth: MediaQuery.of(context).size.width,
             )
-
-            // MaterialButton(
-            //   onPressed: () {
-            //     Get.changeTheme(ThemeData.light()
-            //         .copyWith(appBarTheme: AppBarTheme(color: Colors.pink)));
-            //     controller.storeThemeSetting(false);
-            //   },
-            //   child: text(
-            //       text: '29'.tr,
-            //       size: 24.0,
-            //       color: Colors.white,
-            //       bold: FontWeight.bold),
-            //   color: Colors.grey,
-            //   minWidth: MediaQuery.of(context).size.width,
-            // ),
           ],
         ),
       ),

@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
-import 'package:waelprojects/screens/home.dart';
-
 import '../general/general.dart';
 
 class SingUp extends StatefulWidget {

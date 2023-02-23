@@ -1,9 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../screens/drawersettings.dart';
 import '../screens/home.dart';
 
 SizedBox sizedBox({w, h}) {
@@ -103,9 +99,9 @@ Drawer DrawerMethod(BuildContext context) {
       padding: EdgeInsets.zero,
       children: [
         DrawerHeader(
-          child: Text(
-            'RamziChat',
-            style: const TextStyle(color: Colors.white, fontSize: 30),
+          child: Image.asset(
+            'assets/images/ramzi.png',
+            height: 50,
           ),
           decoration: BoxDecoration(
             color: Colors.grey,
@@ -139,11 +135,10 @@ Drawer DrawerMethod(BuildContext context) {
 AppBar drawerAppBar(BuildContext context) {
   return AppBar(
     elevation: 0,
-    title: text(
-        text: 'RamziChat',
-        size: 24.0,
-        color: Colors.white,
-        bold: FontWeight.bold),
+    title: Image.asset(
+      'assets/images/ramzi.png',
+      height: 50,
+    ),
     actions: [
       Padding(
         padding: const EdgeInsets.all(16.0),

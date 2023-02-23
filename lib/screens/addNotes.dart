@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:waelprojects/database/sqldb.dart';
-
 import '../general/general.dart';
 import 'home.dart';
 

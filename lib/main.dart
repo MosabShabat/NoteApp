@@ -3,8 +3,6 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:waelprojects/screens/addNotes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'classes/shared.dart';
 import 'local/MyLocalController.dart';
 import 'local/local.dart';
 import 'screens/Login.dart';
@@ -62,7 +60,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class Thems {
-  static ThemeData sutomeDarkTheme = ThemeData.dark().copyWith();
-  static ThemeData sutomeLightTheme = ThemeData.light().copyWith();
-}
+// class Thems {
+//   static ThemeData sutomeDarkTheme = ThemeData.dark().copyWith();
+//   static ThemeData sutomeLightTheme = ThemeData.light().copyWith();
+// }

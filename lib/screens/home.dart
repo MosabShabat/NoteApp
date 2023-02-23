@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get.dart';
 import 'package:waelprojects/database/sqldb.dart';
-
 import '../general/general.dart';
 import 'edit.dart';
 
@@ -38,11 +35,10 @@ class _homeState extends State<home> {
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
-          title: text(
-              text: 'RamziChat',
-              size: 24.0,
-              color: Colors.white,
-              bold: FontWeight.bold),
+          title: Image.asset(
+            'assets/images/ramzi.png',
+            height: 50,
+          ),
         ),
         drawer: DrawerMethod(context),
         floatingActionButton: FloatingActionButton(
